@@ -8,9 +8,9 @@ set_target_properties(
     openjphjs 
     PROPERTIES 
     LINK_FLAGS "\
-      -O3 \
-      -s WASM=1 \
       --bind \
+      --allowJs \
+      --emit-tsd interface.d.ts \
       -s DISABLE_EXCEPTION_CATCHING=1 \
       -s ASSERTIONS=0 \
       -s NO_EXIT_RUNTIME=1 \
@@ -20,4 +20,7 @@ set_target_properties(
       -s FILESYSTEM=0 \
       -s EXPORTED_FUNCTIONS=[] \
       -s EXPORTED_RUNTIME_METHODS=[ccall] \
+      -s MODULARIZE=1 \
+      -s EXPORT_NAME=OpenJPHWASM \
+      -s SINGLE_FILE=1 \
    ")
