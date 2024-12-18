@@ -1,7 +1,7 @@
 {
-    "name": "@abasb75/openjph",
-    "version": "0.18.2",
-    "description": "Openjph for browsers",
+    "name": "@abasb75/htj2k-decoder",
+    "version": "0.18.2-test1",
+    "description": "OpenJPH for JavaScript",
     "main": "index.js",
     "types": "interface.d.ts",
     "directories": {
@@ -13,8 +13,8 @@
         "url": "https://github.com/abasb75/openjph"
     },
     "bugs": {
-        "url": "https://github.com/abasb75/Openjph"
+        "url": "https://github.com/abasb75/openjph/issues"
     },
-    "homepage": "https://github.com/abasb75/Openjph"
+    "homepage": "https://github.com/abasb75/openjph#readme"
   }
   

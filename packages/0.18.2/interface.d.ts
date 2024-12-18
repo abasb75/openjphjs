@@ -110,3 +110,7 @@ export interface DecodedOpenJPH {
   numDecompositions:number;
   resolutionAtLevel:any;
 }
+
+export declare function decode(imageBuffer:ArrayBuffer,options?:{iterations?:number;
+  decodeLevel?:number;
+}): DecodedOpenJPH

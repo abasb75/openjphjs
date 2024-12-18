@@ -12,19 +12,18 @@ Try it in your browser [here](https://chafey.github.io/openjphjs/test/browser/in
 1. install From `npm`:
 
 ```bash
-npm i --save @abasb75/openjph
+npm i --save @abasb75/htj2k-decoder
 ```
 
-2. import `@abasb75/openjph`:
+2. import `@abasb75/htj2k-decoder`:
 
 ```js
-import OpenJPEG from '@abasb75/openjph'
+import OpenJPEG from '@abasb75/htj2k-decoder'
 
 ...
-let decoder,encoder;
+let decoder;
 OpenJPHWASM().then((openjph)=> {
     decoder = new openjph.HTJ2KDecoder();
-    encoder = new openjph.HTJ2KEncoder();
 });
 ...
 
