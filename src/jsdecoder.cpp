@@ -82,25 +82,3 @@ EMSCRIPTEN_BINDINGS(HTJ2KDecoder) {
     .function("getNumLayers", &HTJ2KDecoder::getNumLayers)
    ;
 }
-
-EMSCRIPTEN_BINDINGS(HTJ2KEncoder) {
-  class_<HTJ2KEncoder>("HTJ2KEncoder")
-    .constructor<>()
-    .function("getDecodedBuffer", &HTJ2KEncoder::getDecodedBuffer)
-    .function("getEncodedBuffer", &HTJ2KEncoder::getEncodedBuffer)
-    .function("encode", &HTJ2KEncoder::encode)
-    .function("setDecompositions", &HTJ2KEncoder::setDecompositions)
-    .function("setTLMMarker", &HTJ2KEncoder::setTLMMarker)
-    .function("setTilePartDivisionsAtResolutions", &HTJ2KEncoder::setTilePartDivisionsAtResolutions)
-    .function("setTilePartDivisionsAtComponents", &HTJ2KEncoder::setTilePartDivisionsAtComponents)
-    .function("setQuality", &HTJ2KEncoder::setQuality)
-    .function("setProgressionOrder", &HTJ2KEncoder::setProgressionOrder)
-    .function("setDownSample", &HTJ2KEncoder::setDownSample)
-    .function("setImageOffset", &HTJ2KEncoder::setImageOffset)
-    .function("setTileSize", &HTJ2KEncoder::setTileSize)
-    .function("setTileOffset", &HTJ2KEncoder::setTileOffset)
-    .function("setBlockDimensions", &HTJ2KEncoder::setBlockDimensions)
-    .function("setNumPrecincts", &HTJ2KEncoder::setNumPrecincts)
-    .function("setPrecinct", &HTJ2KEncoder::setPrecinct)
-   ;
-}

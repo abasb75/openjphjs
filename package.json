@@ -1,0 +1,46 @@
+{
+    "name": "@abasb75/openjph",
+    "version": "0.25.3",
+    "description": "charls for js (jls file codec)",
+    "directories": {
+        "test": "test"
+    },
+    "keywords": [
+        "JLS",
+        "charls"
+    ],
+    "type": "module",
+    "exports": {
+        "./decode": "./dist/htj2k_es6_decoder.js",
+        "./encode": "./dist/htj2k_es6_encoder.js",
+        "./*": "./dist/*"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "concurrently \"npx tailwindcss -i ./styles/index.css -o ./styles/style.css --watch\" \"npx live-server --port=8000 ./\""
+    },
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abasb75/charls-js/raction.git"
+    },
+    "bugs": {
+        "url": "https://github.com/abasb75/charls-js/issues"
+    },
+    "homepage": "https://github.com/abasb75/charls-js#readme",
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.1.18",
+        "autoprefixer": "^10.4.22",
+        "concurrently": "^9.2.1",
+        "esbuild-copy-files": "^0.2.16",
+        "fs": "^0.0.1-security",
+        "live-server": "^1.2.2",
+        "path": "^0.12.7",
+        "postcss": "^8.5.6",
+        "tailwindcss": "4.1",
+        "tsup": "^8.5.1",
+        "typescript": "^5.9.3"
+    }
+}

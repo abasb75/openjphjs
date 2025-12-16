@@ -1,7 +1,6 @@
 
 add_executable(htj2k_decoder jsdecoder.cpp)
-target_link_libraries(htj2k_decoder PRIVATE openjph)
-
+target_link_libraries(htj2k_decoder PRIVATE openjphsimd)
 target_compile_options(htj2k_decoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_decoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -28,7 +27,7 @@ set_target_properties(
 
 
 add_executable(htj2k_es6_decoder jsdecoder.cpp)
-target_link_libraries(htj2k_es6_decoder PRIVATE openjph)
+target_link_libraries(htj2k_es6_decoder PRIVATE openjphsimd)
 target_compile_options(htj2k_es6_decoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_es6_decoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -55,7 +54,7 @@ set_target_properties(
 
 
 add_executable(htj2k_inline_decoder jsdecoder.cpp)
-target_link_libraries(htj2k_inline_decoder PRIVATE openjph)
+target_link_libraries(htj2k_inline_decoder PRIVATE openjphsimd)
 target_compile_options(htj2k_inline_decoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_inline_decoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -81,7 +80,7 @@ set_target_properties(
    ")
 
 add_executable(htj2k_inline_es6_decoder jsdecoder.cpp)
-target_link_libraries(htj2k_inline_es6_decoder PRIVATE openjph)
+target_link_libraries(htj2k_inline_es6_decoder PRIVATE openjphsimd)
 target_compile_options(htj2k_inline_es6_decoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_inline_es6_decoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -117,7 +116,7 @@ set_target_properties(
 
 
 add_executable(htj2k_encoder jsencoder.cpp)
-target_link_libraries(htj2k_encoder PRIVATE openjph)
+target_link_libraries(htj2k_encoder PRIVATE openjphsimd)
 target_compile_options(htj2k_encoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_encoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -144,7 +143,7 @@ set_target_properties(
 
 
 add_executable(htj2k_es6_encoder jsencoder.cpp)
-target_link_libraries(htj2k_es6_encoder PRIVATE openjph)
+target_link_libraries(htj2k_es6_encoder PRIVATE openjphsimd)
 target_compile_options(htj2k_es6_encoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_es6_encoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -171,7 +170,7 @@ set_target_properties(
 
 
 add_executable(htj2k_inline_encoder jsencoder.cpp)
-target_link_libraries(htj2k_inline_encoder PRIVATE openjph)
+target_link_libraries(htj2k_inline_encoder PRIVATE openjphsimd)
 target_compile_options(htj2k_inline_encoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_inline_encoder PUBLIC cxx_std_11)
 set_target_properties(
@@ -197,7 +196,7 @@ set_target_properties(
    ")
 
 add_executable(htj2k_inline_es6_encoder jsencoder.cpp)
-target_link_libraries(htj2k_inline_es6_encoder PRIVATE openjph)
+target_link_libraries(htj2k_inline_es6_encoder PRIVATE openjphsimd)
 target_compile_options(htj2k_inline_es6_encoder PRIVATE -DOJPH_ENABLE_WASM_SIMD -msimd128)
 target_compile_features(htj2k_inline_es6_encoder PUBLIC cxx_std_11)
 set_target_properties(
