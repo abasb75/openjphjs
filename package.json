@@ -24,12 +24,12 @@
     "author": "",
     "repository": {
         "type": "git",
-        "url": "https://github.com/abasb75/charls-js/raction.git"
+        "url": "https://github.com/abasb75/openjphjs/raction.git"
     },
     "bugs": {
-        "url": "https://github.com/abasb75/charls-js/issues"
+        "url": "https://github.com/abasb75/openjphjs/issues"
     },
-    "homepage": "https://github.com/abasb75/charls-js#readme",
+    "homepage": "https://github.com/abasb75/openjphjs#readme",
     "devDependencies": {
         "@tailwindcss/cli": "^4.1.18",
         "autoprefixer": "^10.4.22",
