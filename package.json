@@ -1,18 +1,23 @@
 {
     "name": "@abasb75/openjph",
-    "version": "0.25.3",
-    "description": "charls for js (jls file codec)",
+    "version": "0.25.3B",
+    "description": "openjph for js (jls file codec)",
     "directories": {
         "test": "test"
     },
     "keywords": [
-        "JLS",
-        "charls"
+        "HTJ2K",
+        "openjph"
     ],
-    "type": "module",
     "exports": {
-        "./decode": "./dist/htj2k_es6_decoder.js",
-        "./encode": "./dist/htj2k_es6_encoder.js",
+        "./decode": {
+            "require": "./dist/htj2k_inline_decoder.js",
+            "import": "./dist/htj2k_es6_decoder.js"
+        },
+        "./encode": {
+            "require": "./dist/htj2k_inline_decoder.js",
+            "import": "./dist/htj2k_es6_encoder.js"
+        },
         "./*": "./dist/*"
     },
     "files": [
